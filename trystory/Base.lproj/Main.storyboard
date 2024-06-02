@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xCQ-s5-gjH">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="IGo-Jg-lO6">
+            <objects>
+                <navigationController id="xCQ-s5-gjH" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AM4-qX-PhF">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="LUa-vZ-CoU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JhO-UT-qHd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-995" y="115"/>
+        </scene>
+        <!--Children Book-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="trystory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image 3" translatesAutoresizingMaskIntoConstraints="NO" id="m3Z-mf-R1M">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ojq-u3-JA0">
+                                <rect key="frame" x="145" y="539" width="98" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Story 2"/>
+                                <connections>
+                                    <segue destination="am6-7y-gwM" kind="show" id="UEV-op-3JA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PoO-Ed-hh4">
+                                <rect key="frame" x="158" y="295" width="77" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Story 1"/>
+                                <connections>
+                                    <segue destination="c4s-bc-2R9" kind="show" id="2qv-QL-bwy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EEe-F3-7PI">
+                                <rect key="frame" x="321" y="770" width="38" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="info" catalog="system"/>
+                                <connections>
+                                    <segue destination="Sib-B5-xch" kind="show" id="0tT-vD-lQ1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="m3Z-mf-R1M" secondAttribute="bottom" id="8fU-7Y-RgO"/>
+                            <constraint firstItem="m3Z-mf-R1M" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="B1k-ju-tjq"/>
+                            <constraint firstAttribute="trailing" secondItem="m3Z-mf-R1M" secondAttribute="trailing" id="Fzh-Vr-l5N"/>
+                            <constraint firstItem="m3Z-mf-R1M" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Kdl-tT-2ug"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="m3Z-mf-R1M" secondAttribute="bottom" id="RnS-zd-Wwz"/>
+                            <constraint firstItem="m3Z-mf-R1M" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="svk-M8-dqi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Children Book" id="YZs-WG-E3h"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20.610687022900763" y="3.5211267605633805"/>
+        </scene>
+        <!--Level 2 Stories-->
+        <scene sceneID="NPO-RP-R4L">
+            <objects>
+                <viewController id="am6-7y-gwM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2JO-d3-Rv5">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image 8" translatesAutoresizingMaskIntoConstraints="NO" id="vcr-AX-Vgg">
+                                <rect key="frame" x="76" y="265" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VUp-WL-a6V">
+                                <rect key="frame" x="158" y="447" width="77" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Story 1"/>
+                                <connections>
+                                    <segue destination="G3R-MG-J24" kind="show" id="S2D-Hq-dAB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Pht-hC-cOM"/>
+                        <color key="backgroundColor" red="0.62187499999999996" green="0.72063154549999997" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Level 2 Stories" id="Diq-Ab-lDl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lNw-vO-0RH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1430" y="456"/>
+        </scene>
+        <!--Story 1-->
+        <scene sceneID="j2T-mA-3nb">
+            <objects>
+                <viewController id="G3R-MG-J24" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="l9i-E9-VZU">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="Azj-H1-QyF">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <color key="backgroundColor" red="0.96825396829999999" green="0.86556899949999999" blue="0.54389307580000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <mutableString key="text">        Title: "The Lion and the Cow: Uniting in Kindness"                                                 Once upon a time, in the heart of the African savanna, there lived a mighty lion named Leo. Leo was revered by all the animals in the kingdom for his strength, courage, and wisdom. He ruled over the land with a fair and just demeanor, ensuring that peace and harmony prevailed among the inhabitants of the vast wilderness.On the outskirts of the kingdom, nestled amidst the tall grasses, there grazed a gentle cow named Daisy. Daisy was known for her peaceful nature and kind heart. She spent her days contentedly munching on the lush green grass, never bothering anyone and always spreading warmth with her gentle presence.One day, a severe drought descended upon the savanna, drying up the once-lush grazing grounds and leaving the animals desperate for sustenance. As the days passed without rain, tensions began to rise, and soon the animals found themselves locked in a bitter struggle for survival.Leo, seeing the plight of his subjects, knew that he had to take action to prevent chaos from engulfing the kingdom. He called for a meeting of all the animals and proposed a plan to ensure that everyone had enough food to survive the drought."We must work together as one," Leo declared, his voice resonating with authority. "Each of us has a role to play in overcoming this challenge. Let us set aside our differences and unite in the face of adversity."</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="J6Z-fk-Wbs"/>
+                        <color key="backgroundColor" red="0.35274616510945445" green="0.96470588239999999" blue="0.37574269871934857" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Azj-H1-QyF" firstAttribute="top" secondItem="J6Z-fk-Wbs" secondAttribute="top" id="LjZ-Ap-HYl"/>
+                            <constraint firstItem="Azj-H1-QyF" firstAttribute="leading" secondItem="J6Z-fk-Wbs" secondAttribute="leading" id="czt-C2-CKW"/>
+                            <constraint firstItem="J6Z-fk-Wbs" firstAttribute="bottom" secondItem="Azj-H1-QyF" secondAttribute="bottom" id="n23-8Z-zAo"/>
+                            <constraint firstItem="J6Z-fk-Wbs" firstAttribute="trailing" secondItem="Azj-H1-QyF" secondAttribute="trailing" id="rzF-dW-DV8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Story 1" id="L0S-bv-LCn">
+                        <barButtonItem key="rightBarButtonItem" image="square.and.arrow.up.fill" catalog="system" id="U37-SV-AQ4">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="TM2-Tq-wa6" kind="show" id="his-9p-mNc"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dhv-oc-36c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3463" y="729"/>
+        </scene>
+        <!--Story 2-->
+        <scene sceneID="EbI-1J-uvX">
+            <objects>
+                <viewController id="TM2-Tq-wa6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ycp-LO-9bz">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NPE-3T-TPa">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <color key="backgroundColor" red="0.96862745100000003" green="0.86666666670000003" blue="0.5450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <mutableString key="text">The animals nodded in agreement, inspired by Leo's words. They formed teams to search for water and food, with Leo leading the efforts to find new grazing grounds for the herbivores.As the days passed, Leo and his team stumbled upon a hidden oasis teeming with fresh water and lush vegetation. It was a paradise amidst the barren landscape, a sanctuary for all who were weary from the drought.However, to Leo's surprise, they found Daisy the cow already grazing peacefully in the oasis, enjoying the abundance of food and water. Leo approached Daisy with a mixture of curiosity and suspicion, wondering how she had managed to find this hidden gem.Daisy greeted Leo with a warm smile, her eyes twinkling with kindness. "Greetings, King Leo," she said softly. "I stumbled upon this oasis by chance and realized that it could provide refuge for those in need. Please, join me in sharing this bounty with our fellow animals."Leo was moved by Daisy's selflessness and generosity. Despite being a lion, the natural predator of cows, he recognized the purity of her heart and the importance of her actions.Together, Leo and Daisy worked tirelessly to ensure that all the animals in the kingdom had access to the oasis. They set aside their differences and united in their common goal of survival, proving that compassion and cooperation can overcome even the most daunting challenges.In the end, the drought passed, and the savanna bloomed once again with life and vitality. But the memory of Leo and Daisy's selfless actions lived on, serving as a reminder to all the animals that true strength lies not in power or might, but in kindness and unity.</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lvY-6q-Igh"/>
+                        <color key="backgroundColor" red="0.35294117650000001" green="0.96470588239999999" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="NPE-3T-TPa" firstAttribute="top" secondItem="lvY-6q-Igh" secondAttribute="top" id="72X-Xk-baD"/>
+                            <constraint firstItem="NPE-3T-TPa" firstAttribute="leading" secondItem="lvY-6q-Igh" secondAttribute="leading" id="I5w-Aw-Pv1"/>
+                            <constraint firstItem="lvY-6q-Igh" firstAttribute="trailing" secondItem="NPE-3T-TPa" secondAttribute="trailing" id="RpT-uq-TRu"/>
+                            <constraint firstItem="lvY-6q-Igh" firstAttribute="bottom" secondItem="NPE-3T-TPa" secondAttribute="bottom" id="zk5-C1-2Mq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Story 2" id="g3E-CQ-z9D"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ax4-hr-Ut1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5088" y="729"/>
+        </scene>
+        <!--Level 1 Stories-->
+        <scene sceneID="oTw-Gl-fgV">
+            <objects>
+                <viewController id="c4s-bc-2R9" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="e3P-Ru-b4r">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="9h4-W7-6Iw">
+                                <rect key="frame" x="76" y="121" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image 1" translatesAutoresizingMaskIntoConstraints="NO" id="6RJ-N4-Iqg">
+                                <rect key="frame" x="76" y="463" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZv-of-RWo">
+                                <rect key="frame" x="158" y="257" width="77" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Story 1"/>
+                                <connections>
+                                    <segue destination="adt-7j-wZH" kind="show" id="awn-3W-k5P"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KXs-HN-I5H">
+                                <rect key="frame" x="157" y="623" width="79" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Story 2"/>
+                                <connections>
+                                    <segue destination="cq7-jm-DTr" kind="show" id="DZK-bn-db4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XoX-XL-YmW"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Level 1 Stories" id="T4E-z5-VDM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="flO-wf-Ntt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1403.8167938931297" y="-350"/>
+        </scene>
+        <!--Story 1-->
+        <scene sceneID="e4m-h2-AIy">
+            <objects>
+                <viewController id="GTf-5L-XDd" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jnd-aN-POR">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="FJo-HP-G0V">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <color key="backgroundColor" red="0.66674140169999996" green="0.44562270700000001" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <mutableString key="text">Milo pondered for a moment before an idea struck him. "Well, Cleo, as a mouse, I have access to all sorts of hidden treasures and delicious treats that you cats could never hope to find on your own. If you agree to be my friend, I promise to share my discoveries with you."Cleo's interest was piqued. She had never considered the possibility of befriending a mouse before, but the thought of access to tasty treats was too tempting to resist. "Very well, Milo," she conceded with a sly grin. "You have yourself a deal. Let's see what adventures await us as unlikely friends."And so, Milo and Cleo embarked on a series of daring escapades together, each using their unique skills to help the other. Milo led Cleo to hidden stashes of nuts and berries, while Cleo taught Milo the art of stealth and cunning. Despite their differences, they found that they made a formidable team, and their friendship blossomed with each passing day.In the end, Milo and Cleo proved that even the most unlikely of friendships can flourish in the face of adversity. And as they roamed the village together, side by side, they became living proof that sometimes, the greatest adventures can be found in the most unexpected places.</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NAV-h1-idm"/>
+                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                        <constraints>
+                            <constraint firstItem="NAV-h1-idm" firstAttribute="bottom" secondItem="FJo-HP-G0V" secondAttribute="bottom" id="4I8-Kd-wbN"/>
+                            <constraint firstItem="FJo-HP-G0V" firstAttribute="top" secondItem="NAV-h1-idm" secondAttribute="top" id="5Df-mJ-5Dm"/>
+                            <constraint firstItem="FJo-HP-G0V" firstAttribute="leading" secondItem="NAV-h1-idm" secondAttribute="leading" id="n0c-Q1-FHD"/>
+                            <constraint firstAttribute="trailing" secondItem="FJo-HP-G0V" secondAttribute="trailing" id="sKn-8d-6oI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Story 1" id="ds5-0Q-QOH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D2u-oA-toC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5088" y="-1046"/>
+        </scene>
+        <!--Story 1-->
+        <scene sceneID="LXi-ii-gxh">
+            <objects>
+                <viewController id="adt-7j-wZH" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZEu-fx-wdE">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="pNX-lZ-Vnp">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <color key="backgroundColor" red="0.66674140169999996" green="0.44562270700000001" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <mutableString key="text">Once upon a time in a cozy little village nestled amidst rolling hills, there lived a curious little mouse named Milo. Milo was known throughout the village for his adventurous spirit and insatiable curiosity. He spent his days exploring every nook and cranny, always seeking out new discoveries.One sunny morning, as Milo scampered through the village square, he stumbled upon a rather peculiar sight—a sleek and sly cat named Cleo, lounging lazily in the warm sunlight. Cleo was known far and wide as the most cunning hunter in the village, feared by all the mice for her stealth and agility.Despite the warnings of his fellow mice, Milo couldn't help but feel a sense of intrigue toward Cleo. He had heard countless tales of her prowess as a hunter, and he couldn't resist the temptation to approach her."Good morning, Cleo," Milo greeted the cat cautiously, his whiskers twitching with nervous excitement.Cleo opened one eye lazily and regarded Milo with a mixture of amusement and suspicion. "Well, well, well, what do we have here?" she purred, her voice smooth as silk. "A brave little mouse wandering into the lion's den, eh?"Milo chuckled nervously, trying to mask his fear with bravado. "I may be small, but I'm not afraid of you, Cleo," he declared boldly. "I believe there's more to you than just a fierce hunter. Perhaps we could be friends."Cleo's eyes narrowed, and she let out a low chuckle that sent shivers down Milo's spine. "Friends, you say? Between a mouse and a cat? That's quite the proposition, Milo. Tell me, what could you possibly offer me in exchange for friendship?"</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4XZ-1R-oOJ"/>
+                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                        <constraints>
+                            <constraint firstItem="4XZ-1R-oOJ" firstAttribute="bottom" secondItem="pNX-lZ-Vnp" secondAttribute="bottom" id="0GJ-eF-1Oc"/>
+                            <constraint firstItem="pNX-lZ-Vnp" firstAttribute="top" secondItem="4XZ-1R-oOJ" secondAttribute="top" id="R4f-BE-egG"/>
+                            <constraint firstItem="4XZ-1R-oOJ" firstAttribute="trailing" secondItem="pNX-lZ-Vnp" secondAttribute="trailing" id="gfu-9A-Kb1"/>
+                            <constraint firstItem="pNX-lZ-Vnp" firstAttribute="leading" secondItem="4XZ-1R-oOJ" secondAttribute="leading" id="mJK-Q6-NtR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Story 1" id="C80-I1-75l">
+                        <barButtonItem key="rightBarButtonItem" image="square.and.arrow.up.fill" catalog="system" id="8kf-zJ-da5">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="GTf-5L-XDd" kind="show" id="oCs-dZ-vzL"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BdR-GM-TJD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3155" y="-1120"/>
+        </scene>
+        <!--Story 2-->
+        <scene sceneID="2kE-cS-cj5">
+            <objects>
+                <viewController id="cq7-jm-DTr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qGe-KA-FHC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4rM-pH-6wk">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <color key="backgroundColor" red="0.96470588239999999" green="0.42680165889999999" blue="0.49901005139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">In a dense jungle lived a group of animals who lived together in peace and harmony. There was a little monkey named Max who lived amongst them. Max was always very happy and energetic, but sometimes he would become sad or angry very quickly. His friends
+often saw him crying or throwing tantrums, and they didn't know what to do.
+While Max was swinging from tree to tree, he suddenly became very angry and started throwing bananas. His friends, the zebra, giraffe,
+and elephant, approached him to see what was wrong. Max told them that he couldn't control his feelings and that he felt very sad and angry all the time.
+His friends listened carefully and then took him to the wise old owl who lived in the jungle. The owl listened to Max's problem and then explained to him about emotional regulation. She told Max that
+emotions are natural and everyone feels them, but it's important to know how to control and manage them.
+The owl taught Max some techniques to help regulate his emotions, such as taking deep breaths, counting to 10, and going for a walk.
+Max practiced these techniques every day, and soon he started to feel better. He learned that it was okay to feel sad or angry, but it was
+important to manage those feelings so that they wouldn't take over.Max's friends were so proud of him for learning how to control his emotions, and they could see that he was much happier now. Max was grateful for the owl's help, and he knew that emotional regulation was an important skill that he would use for the rest of his life. Max lived a happy and peaceful life in the jungle, surrounded by his loving friends. He was no longer controlled by his emotions, but instead, he was in control of them. And every time he felt sad or angry, he remembered the techniques the owl taught him, and he practiced them.
+This story teaches children about the importance of regulating their emotions.</mutableString>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NDT-fR-OT5"/>
+                        <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NDT-fR-OT5" firstAttribute="trailing" secondItem="4rM-pH-6wk" secondAttribute="trailing" id="1qT-sk-g9O"/>
+                            <constraint firstItem="4rM-pH-6wk" firstAttribute="leading" secondItem="NDT-fR-OT5" secondAttribute="leading" id="Vcw-lf-4iu"/>
+                            <constraint firstItem="NDT-fR-OT5" firstAttribute="bottom" secondItem="4rM-pH-6wk" secondAttribute="bottom" id="iOE-1Y-sZy"/>
+                            <constraint firstItem="4rM-pH-6wk" firstAttribute="top" secondItem="NDT-fR-OT5" secondAttribute="top" id="yq4-Dl-3TE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Story 2" id="O68-UY-0GW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OXr-8H-0FC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3180.9160305343512" y="-235.21126760563382"/>
+        </scene>
+        <!--Book Information-->
+        <scene sceneID="LwQ-L8-5Bp">
+            <objects>
+                <viewController id="Sib-B5-xch" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3Ev-br-HlR">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OE5-rf-oHq">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                <color key="tintColor" red="0.94973544970000001" green="0.89116818750000004" blue="0.59506482329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Title 1:Story 1
+Age Recommendation: 2 to 6 years
+
+Title 2: Story 2
+Age Recommendation: 6 to 8 years
+
+Created By: Anjali Jadav
+Date: 14-02-2024
+
+About the Book:
+Storybook 1 Perfect for children aged 2 to 6. 
+Storybook 2 perfect for children aged 6 to 8. 
+
+Written by Anjali Jadav, this enchanting story explores the power of friendship through thrilling escapades and heartwarming moments.</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" metaFont="system" size="14"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gtb-GZ-B0J"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OE5-rf-oHq" firstAttribute="leading" secondItem="gtb-GZ-B0J" secondAttribute="leading" id="2Hy-G7-rQl"/>
+                            <constraint firstItem="OE5-rf-oHq" firstAttribute="top" secondItem="gtb-GZ-B0J" secondAttribute="top" id="ZVl-KW-9jk"/>
+                            <constraint firstItem="gtb-GZ-B0J" firstAttribute="bottom" secondItem="OE5-rf-oHq" secondAttribute="bottom" id="ddp-0g-Asn"/>
+                            <constraint firstItem="gtb-GZ-B0J" firstAttribute="trailing" secondItem="OE5-rf-oHq" secondAttribute="trailing" id="qN2-0D-6en"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Book Information" id="AEB-2a-pLC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KGM-a9-jCL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-34" y="905"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Image" width="2000" height="2500"/>
+        <image name="Image 1" width="2683" height="3500"/>
+        <image name="Image 3" width="1280" height="720"/>
+        <image name="Image 8" width="642" height="280"/>
+        <image name="info" catalog="system" width="93" height="128"/>
+        <image name="square.and.arrow.up.fill" catalog="system" width="115" height="128"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemCyanColor">
+            <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
